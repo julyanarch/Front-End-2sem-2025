@@ -1,0 +1,9 @@
+/* Alterar a cor de todos os H1 */
+h1{
+    color: brown;
+}
+
+#bod{
+    background-color: rgb(121, 118, 118);
+}
+
