@@ -1,0 +1,11 @@
+body {
+  /* background: linear-gradient(to right , #a0a0cf #9e5d5d); */
+  background: linear-gradient(to right, #c3d19c, #79ac28, #3e4b11);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  color: rgb(0, 0, 0);
+}
