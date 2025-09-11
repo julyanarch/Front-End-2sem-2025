@@ -1,0 +1,51 @@
+/* Configuração do body padrão para Desktop */
+body{
+    background-color: rgb(172, 206, 164);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*Ajustar / Responder o conteúdo da página para dispositivos móveis - tablet */ 
+@media screen and (max-width: 760px) {
+    body{
+        background-color: white;
+    }
+    h1{
+        /* diminuir um pouco a fonte */
+        font-size: 24px;
+    }
+}
+
+/* Configuração padrão do parágrafo exemploResponsividade */
+.ResponsivaExemplo{
+    padding: 5em;
+    color: black;
+}
+
+/* Para dispositivos móveis, aplicar esta configuração (600 px ou maior) */
+@media only screen and (max-width: 600px){
+    .ResponsivaExemplo {
+        background-color: rgb(29, 99, 165);
+    }
+}
+
+/* Para dispositivos móveis médios, aplicar esta configuração (768 px ou maior) */
+@media only screen and (min-width: 768px){
+    .ResponsivaExemplo {
+        background-color: rgb(80, 131, 23);
+    }
+}
+
+/* Para dispositivos laptops, aplicar esta configuração (992 px ou maior) */
+@media only screen and (min-width: 992px){
+    .ResponsivaExemplo {
+        background-color: rgb(117, 19, 109);
+    }
+}
+
+/* Para dispositivos desktops, aplicar esta configuração (1200 px ou maior) */
+@media only screen and (min-width: 1200px){
+    .ResponsivaExemplo {
+        background-color: rgb(131, 23, 23);
+    }
+}
