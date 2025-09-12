@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projeto Responsivo FlexBox</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Cabeçalho */
+header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Estilo da barra superior de navegação */
+nav {
+  display: flex;
+  background-color: #333;
+}
+
+/* Estilo dos links da barra de navegação */
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Trocar cor quando passar mouse sobre a navegação */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Configuração da estrutura de conteúdos */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Criar duas colunas desiguais que fiquem próximas uma da outra*/
+/* Configuração da barra a esquerda */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Dimensionamento de uma imagem virtual */
+.dimensaoImagem {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Rodapé */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Reconfigurar o menu de navegação para dispositivos menores que 728 px */
+@media screen and (max-width: 728px){
+  nav {
+    flex-direction: column;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Nota -->
+<div style="background:#9dff00;padding:5px">
+  <h4 style="text-align:center">Redimensione a janela do navegador para ver o efeito responsivo.</h4>
+</div>
+
+<!-- Cabeçalho -->
+<header>
+  <h1>Meu Site WEB</h1>
+  <p>Utilizando o layout <b>flexivel (FlexBox)</b>.</p>    
+</header>
+
+<!-- Barra de navegação -->
+<nav>
+  <a href="#">Link 01</a>
+  <a href="#">Link 02</a>
+  <a href="#">Link 03</a>
+  <a href="#">Link 04</a>zzzz
+</nav>
+
+<!-- Conteúdo com estrutura flexivel -->
+<div class="row">
+  <div class="side">
+    <h2>Sobre nós</h2>
+    <h5>Foto da Empresa</h5>
+    <div class="dimensaoImagem" style="height:200px;">Imagem</div>
+    <p>Aqui poderia ser adicionado um texto sobre a organização</p>
+    <h3>Mais informações sobre</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="dimensaoImagem" style="height:60px;">Imagem</div><br>
+    <div class="dimensaoImagem" style="height:60px;">Imagem</div><br>
+    <div class="dimensaoImagem" style="height:60px;">Imagem</div>
+  </div>
+  <main>
+    <h2>Título 01</h2>
+    <h5>Descrição do conteúdo do título 01, Dec 8, 2025</h5>
+    <div class="dimensaoImagem" style="height:200px;">Imagem</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptates dignissimos corporis laboriosam, non commodi rem iusto dolores deleniti, hic molestiae veniam ratione libero alias magni neque deserunt nobis. Sed?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae mollitia iste voluptates. Mollitia sequi odit fuga iste saepe quos reiciendis beatae corrupti explicabo omnis, fugiat eum aperiam recusandae maiores similique!</p>
+    <br>
+    <h2>Título 02</h2>
+    <h5>Descrição do conteúdo do título 02, Sep 3, 2025</h5>
+    <div class="dimensaoImagem" style="height:200px;">Imagem</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptates dignissimos corporis laboriosam, non commodi rem iusto dolores deleniti, hic molestiae veniam ratione libero alias magni neque deserunt nobis. Sed?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae mollitia iste voluptates. Mollitia sequi odit fuga iste saepe quos reiciendis beatae corrupti explicabo omnis, fugiat eum aperiam recusandae maiores similique!</p>
+  </main>
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <h2>Footer</h2>
+</footer>
+
+</body>
+</html>
