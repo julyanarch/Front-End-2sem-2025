@@ -1,14 +1,13 @@
-# Front End -2sem - 2025
+# 📝 Lista de Tarefas em React
 
-Aulas de Front-end - 2º Semestre
+Este projeto foi desenvolvido como parte do **Desafio Aula 14** e tem como objetivo criar um aplicativo em React para organizar uma lista de compras ou tarefas. O usuário pode adicionar itens, marcar como concluídos e remover da lista.
 
-Este repositório contém os exercícios, projetos e materiais de estudo das aulas de Front-end do segundo semestre de 2025.
+---
 
-## Tecnologias utilizadas:
-- HTML
-- CSS
-- JavaScript
+## 🚀 Como rodar o projeto
 
-## Estrutura do repositório:
-- **HTML-CSS**: Exercícios e projetos de HTML e CSS.
-- **JavaScript**: Exercícios e projetos de JavaScript
+1. Certifique-se de ter o **Node.js** instalado em sua máquina.
+2. No terminal, execute os comandos abaixo para criar o projeto:
+   ```bash
+   npx create-react-app lista-react
+   cd lista-react
